@@ -1,0 +1,26 @@
+# IDE
+/.idea
+
+# Terraform
+/infrastructure/.env
+/infrastructure/.terraform/*
+/infrastructure/*.tfstate
+/infrastructure/*.tfstate.*
+/infrastructure/crash.log
+/infrastructure/crash.*.log
+/infrastructure/*.tfvars
+/infrastructure/*.tfvars.json
+/infrastructure/.terraform.lock.hcl
+/infrastructure/terraform.tfstate.backup
+/infrastructure/override.tf
+/infrastructure/override.tf.json
+/infrastructure/*_override.tf
+/infrastructure/*_override.tf.json
+/infrastructure/.terraformrc
+/infrastructure/terraform.rc
+
+# App
+/dist
+/dist.zip
+/src/yarn-error.log
+/src/node_modules
