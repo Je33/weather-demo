@@ -13,7 +13,7 @@ export const getSecret = async (name: string): Promise<string> => {
     )
 
     if (!keyRes.SecretString) {
-        throw "secret is empty"
+        throw "Weather Key is empty."
     }
 
     return keyRes.SecretString
