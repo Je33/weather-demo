@@ -3,7 +3,10 @@
 - Open Weather API
 - Terraform
 - AWS Lambda
+- AWS S3
 - AWS ElastiCache
+- AWS Gateway API
+- AWS Cognito
 
 # Build and deploy project
 
@@ -19,7 +22,7 @@ make deploy
 # Dependencies
 
 - nodejs 18.x (https://nodejs.org/en)
-- aws cli (https://aws.amazon.com/ru/cli/)
 - yarn (https://yarnpkg.com/)
+- aws cli (https://aws.amazon.com/ru/cli/)
 - terraform (https://www.terraform.io/)
 - make (https://www.gnu.org/software/make/)
