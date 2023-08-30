@@ -1,0 +1,1 @@
+window.apiHost='https://ppvyrlfkc1.execute-api.eu-central-1.amazonaws.com/dev'

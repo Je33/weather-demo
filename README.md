@@ -6,4 +6,8 @@
 
 — AWS Lambda
 
-— AWS Elastic Cache
+— AWS ElastiCache
+
+# Build and deploy project
+
+make deploy

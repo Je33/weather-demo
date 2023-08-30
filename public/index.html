@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container grid-lg">
+        <div class="columns">
+            <div class="column col-xs-12">
+                <h1 class="pt-2">Weather Demo</h1>
+                <div class="input-group mb-2">
+                    <input type="text" class="form-input" placeholder="City" id="inputCity" required>
+                    <button class="btn btn-primary input-group-btn" id="btnSubmit">Submit</button>
+                </div>
+                <div class="card" id="contRes">
+                    <div class="card-header">
+                        <div class="card-title h5" id="contResTitle"></div>
+                        <div class="card-subtitle text-gray" id="contResDate"></div>
+                    </div>
+                    <div class="card-body" id="contResText"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
