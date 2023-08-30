@@ -10,6 +10,6 @@ export const handler: Handler = async (event: APIGatewayEvent) => {
 
         return getResponse(200, weather)
     } catch (e) {
-        return getResponse(500, JSON.stringify({error: e}))
+        return getResponse(500, JSON.stringify({message: e}))
     }
 }
