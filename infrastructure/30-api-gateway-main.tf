@@ -5,7 +5,7 @@ resource "aws_apigatewayv2_api" "main" {
   cors_configuration {
     allow_origins = ["http://${aws_s3_bucket.weather_public.bucket}.s3-website.eu-central-1.amazonaws.com"]
     allow_methods = ["POST", "GET", "OPTIONS"]
-    allow_headers = ["content-type"]
+    allow_headers = ["Content-Type", "Authorization"]
     max_age = 300
   }
 }
