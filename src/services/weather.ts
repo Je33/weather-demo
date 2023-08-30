@@ -1,6 +1,6 @@
 import { getSecret } from "./secret"
 import { getCache, setCache } from "./cache"
-import { getWeatherProvider } from "../providers/visualcrossing"
+import { getWeatherProvider } from "../providers/openweathermap"
 
 export type WeatherOut = {
     city: string

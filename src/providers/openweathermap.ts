@@ -51,6 +51,11 @@ type OpenWeatherRes = {
     cod: number
 }
 
+type OpenWeatherResError = {
+    cod: number
+    message: string
+}
+
 export const getWeatherProvider = async (city: string): Promise<string> => {
     const openWeatherKey = await getSecret("openWeatherApiKey")
     const openWeatherRes = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${openWeatherKey}`)
@@ -58,7 +63,8 @@ export const getWeatherProvider = async (city: string): Promise<string> => {
         const openWeatherResText = await openWeatherRes.json() as OpenWeatherRes
         return JSON.stringify(serializeRes(openWeatherResText))
     } else {
-        throw await openWeatherRes.json()
+        const errorRes = await openWeatherRes.json() as OpenWeatherResError
+        throw errorRes.message
     }
 }
 
